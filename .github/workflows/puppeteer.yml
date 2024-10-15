@@ -12,6 +12,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
       - name: Install Dependencies
+        run: npm install
       - name: Run Main Script
         run: node scripts/main.mjs
       - name: Archive Artifacts
